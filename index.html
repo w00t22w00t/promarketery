@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline';"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Promarketery</title>
+    <link rel="stylesheet" href="build/css/bootstrap.min.css" />
+    <link href="/build/css/main.css" rel="stylesheet" />
+    <link href="/build/css/front-page.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="text-white fixed-top">
+      <div class="container-xxl">
+        <div class="row align-items-center">
+          <div class="col-6 col-md-3 d-flex align-items-center logo">
+            <img src="/build/images/logo.png" alt="Logo" class="img-fluid" />
+            <p class="d-none d-md-block mb-0 logo-text">Findtrend</p>
+          </div>
+
+          <div class="col-6 col-md-9 col-lg-6 ">
+            <nav class="navbar navbar-expand-lg justify-content-end">
+              <button
+                class="navbar-toggler dropdown-bttn"
+                type="button"
+                data-toggle="collapse"
+                data-mdb-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+              <div class="animated-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- <span></span> -->
+              </div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">How it work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Solution</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <button class="btn text-white header__login">Login</button>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <button class="btn header__register">Register</button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-12 col-md-3 justify-content-end text-md-right d-none d-lg-flex">
+            <button class="btn text-white header__login">Login</button>
+            <button class="btn header__register">Register</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="start text-white">
+      <div class="container-xxl text-center">
+        <div class="start__description">
+          <h1>Minimize your tabs.</h1>
+          <h2 class="like-h1">Find the trends!</h2>
+          <p>
+            Don't let your computer memories consumes all of those browser tabs. <br />
+            Findtrend  let you gathers all of your favorite website into one place.
+          </p>
+        </div>
+        <div class="start__mbttn-container">
+          <button type="button" id="bttn-modal" class="btn start__modal-bttn" data-toggle="modal" data-target="#exampleModalCenter">
+            Get Started 🔥
+          </button>
+          <div class="start__research-img">
+            <img src="./build/images/img-hero.png" alt="">
+          </div>
+        </div>
+
+        <ul class="start__list">
+          <li class="start__list-item d-flex align-items-center mx-auto">
+            <div class="start__soc-icon">
+              <img src="build/images/icons/twitter.png" alt="twitter">
+            </div>
+            <p class="mb-0">Cryptopunk - Search</p>
+            <div class="start__fade d-flex align-items-center justify-content-end">
+              <div class="start__close-bttn"></div>
+            </div>
+          </li>
+          <li class="start__list-item d-flex align-items-center mx-auto">
+            <div class="start__soc-icon">
+              <img src="build/images/icons/pinterest.png" alt="pinterest">
+            </div>
+            <p class="mb-0">Popular Design - Search</p>
+            <div class="start__fade d-flex align-items-center justify-content-end">
+              <div class="start__close-bttn"></div>
+            </div>
+          </li>
+          <li class="start__list-item d-flex align-items-center mx-auto">
+            <div class="start__soc-icon">
+              <img src="build/images/icons/facebook.png" alt="facebook">
+            </div>
+            <p class="mb-0">Product Design - Search</p>
+            <div class="start__fade d-flex align-items-center justify-content-end">
+              <div class="start__close-bttn"></div>
+            </div>
+          </li>
+          <li class="start__list-item d-flex align-items-center mx-auto">
+            <div class="start__soc-icon">
+              <img src="build/images/icons/ball.png" alt="ball">
+            </div>
+            <p class="mb-0">Elon Musk - Search</p>
+            <div class="start__fade d-flex align-items-center justify-content-end">
+              <div class="start__close-bttn"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Form request</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="myForm" class="w-75 mx-auto" action="send.php" method="post">
+              <input type="text" class="form-control mb-3" placeholder="Name" id="name" name="name" />
+              <input type="text" class="form-control mb-3" placeholder="Email" id="email" name="email" />
+              <input type="text" class="form-control" placeholder="Telephone" id="telephone" name="telephone" />
+        
+              <input type="submit" class="form-submit btn d-block mx-auto" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="build/js/jquery.min.js"></script>
+    <script src="build/js/popper.min.js"></script>
+    <script src="build/js//bootstrap.min.js"></script>
+    <script src="build/js/main.js"></script>
+  </body>
+</html>
